@@ -1,6 +1,23 @@
-/*Importations*/
+
+/*########## Importations ##########*/
+
 @import "./utils/variables";
 @import "./utils/mixins";
+@import "./base/verycommon";
 @import "./base/common";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+/*########## Desktop uniquement ##########*/
+
+@media screen and (min-width: 992px){
+    body{
+        background-color: $color-primary;
+    }
+    header{
+        img{
+            width: 200px;
+            height: auto;
+        }
+    }
+}
