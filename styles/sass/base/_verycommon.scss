@@ -1,10 +1,15 @@
 *{
     box-sizing: border-box;
+    font-size: $size-text-default;
     @include font-roboto();
 }
 p{
     color: $color-secondary;
-    font-size: 50px;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 h1{
     color: $color-primary;
@@ -63,5 +68,36 @@ header{
     }
 }
 footer{
-    
+    position: relative;
+    background-color: $color-dark;
+    width: 100%;
+    height: auto;
+    img{
+        position: relative;
+        left: 6%;
+        filter: opacity(75%) brightness(100);;
+        max-width: 100px;
+        width: 35%;
+        margin-top: 20px;;
+        margin-bottom: 14px;;
+    }
+    ul{
+        position: relative;
+        left: 6%;
+        padding-bottom: 24px;
+        a{
+            text-decoration: none;
+            color: white;
+            &:hover{
+                color: $color-secondary;
+            }
+        }
+        li{
+            filter: opacity(75%);
+            margin-bottom: 6px;
+            i{
+                margin-right: 8px;
+            }
+        }
+    }
 }
