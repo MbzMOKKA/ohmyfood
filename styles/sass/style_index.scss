@@ -1,4 +1,3 @@
-/*Question*/
 /*########## Imports ##########*/
 
 @import "./utils/variables";
@@ -10,13 +9,10 @@
 
 /*########## Tablet and smartphone ##########*/
 
+@import "./page/onlyindex";
+
 /*########## Desktop only ##########*/
 
 @media screen and (min-width: $width-desktop-min){
-    header{
-        img{
-            width: 200px;
-            height: auto;
-        }
-    }
+    
 }
