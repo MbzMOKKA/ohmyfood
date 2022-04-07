@@ -1,19 +1,37 @@
 *{
     box-sizing: border-box;
     font-size: $size-text-default;
+    font-weight: 500;
     @include font-roboto();
+    color: black;
 }
 p{
-    color: $color-secondary;
+    font-size: 12px;
+    font-weight: 400;
+}
+strong{
+    font-size: 12px;
+}
+/*Name of the menu in its own page*/
+h1{
+    color: $color-primary;
+    @include font-shrikhand();
+}
+/*Name of a part of the site*/
+h2{
+    font-weight: 700;
+}
+/*Name of a food category*/
+h3{
+}
+/*Name of the menu in the index*/
+h4{
+    font-weight: 700;
 }
 ul{
     list-style: none;
     padding: 0;
     margin: 0;
-}
-h1{
-    color: $color-primary;
-    @include font-shrikhand();
 }
 body{
     background-color: #EAEAEA;
@@ -75,7 +93,7 @@ footer{
     img{
         position: relative;
         left: 6%;
-        filter: opacity(75%) brightness(100);;
+        filter: brightness(100);
         max-width: 100px;
         width: 35%;
         margin-top: 20px;;
@@ -87,15 +105,19 @@ footer{
         padding-bottom: 24px;
         a{
             text-decoration: none;
-            color: white;
             &:hover{
-                color: $color-secondary;
+                i,strong{
+                    color: $color-secondary;
+                }
             }
         }
         li{
-            filter: opacity(75%);
             margin-bottom: 6px;
+            strong{
+                color: white;
+            }
             i{
+                color: white;
                 margin-right: 8px;
             }
         }
