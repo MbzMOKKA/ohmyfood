@@ -9,15 +9,21 @@
   font-weight: 500;
   font-family: 'Roboto', sans-serif;
   color: black;
+  margin: 0;
+  padding: 0;
 }
 
 p {
-  font-size: 12px;
+  font-size: 18px;
   font-weight: 400;
 }
 
 strong {
-  font-size: 12px;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
 }
 
 /*Name of the menu in its own page*/
@@ -28,6 +34,7 @@ h1 {
 
 /*Name of a part of the site*/
 h2 {
+  font-size: 22px;
   font-weight: 700;
 }
 
@@ -53,6 +60,7 @@ div {
 }
 
 body {
+  width: 100%;
   background-color: #EAEAEA;
 }
 
@@ -80,7 +88,6 @@ header .header_back-button {
 header .header_back-button a {
   width: 100%;
   height: 100%;
-  text-decoration: none;
 }
 
 header .header_back-button a:hover i {
@@ -127,15 +134,13 @@ header img {
 }
 
 footer {
-  position: relative;
   background-color: #353535;
   width: 100%;
   height: auto;
 }
 
 footer img {
-  position: relative;
-  left: 6%;
+  margin-left: 6%;
   -webkit-filter: brightness(100);
           filter: brightness(100);
   max-width: 100px;
@@ -145,13 +150,8 @@ footer img {
 }
 
 footer ul {
-  position: relative;
-  left: 6%;
+  padding-left: 6%;
   padding-bottom: 24px;
-}
-
-footer ul a {
-  text-decoration: none;
 }
 
 footer ul a:hover i, footer ul a:hover strong {
@@ -169,6 +169,40 @@ footer ul li strong {
 footer ul li i {
   color: white;
   margin-right: 8px;
+}
+
+.main-button {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  width: 60%;
+  max-width: 400px;
+  -webkit-box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.main-button a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.main-button strong {
+  text-align: center;
+  color: white;
 }
 
 /*########## Tablet and smartphone ##########*/
