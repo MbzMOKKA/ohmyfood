@@ -227,6 +227,12 @@ footer ul li i {
   padding-bottom: 18px;
 }
 
+.main-button p {
+  text-align: center;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
 .main-button strong {
   text-align: center;
   color: white;
