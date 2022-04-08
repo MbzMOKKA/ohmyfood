@@ -46,7 +46,8 @@
         counter-reset: my-awesome-counter;
         li{
             position: relative;
-            width: 100%;
+            left: 10px;
+            width: calc(100% - 10px);
             height: 64px;
             border-radius: 15px;
             box-shadow: 0px 5px 10px $color-shadow-2;
@@ -69,9 +70,7 @@
             }
             &::before {
                 content: counter(my-awesome-counter);
-                position: relative;
-                left: -10px;
-                //transform: translateX(-10px);
+                transform: translateX(-10px);
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -99,7 +98,7 @@
             }
             i{
                 position: absolute;
-                left: 26px;
+                left: 24px;
                 font-size: 15px;
                 color: $color-dark-2;
                 margin-left: 3px;
@@ -108,7 +107,7 @@
             }
             p{
                 position: absolute;
-                left: 64px;
+                left: 60px;
                 margin-right: 8px;
             }
         }

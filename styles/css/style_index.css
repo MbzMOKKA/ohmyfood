@@ -315,7 +315,8 @@ footer ul li i {
 
 #tutorial ol li {
   position: relative;
-  width: auto;
+  left: 10px;
+  width: calc(100% - 10px);
   height: 64px;
   border-radius: 15px;
   -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.12);
@@ -353,8 +354,8 @@ footer ul li i {
 
 #tutorial ol li::before {
   content: counter(my-awesome-counter);
-  position: relative;
-  left: -10px;
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -394,7 +395,7 @@ footer ul li i {
 
 #tutorial ol li i {
   position: absolute;
-  left: 26px;
+  left: 24px;
   font-size: 15px;
   color: #7E7E7E;
   margin-left: 3px;
@@ -405,7 +406,7 @@ footer ul li i {
 
 #tutorial ol li p {
   position: absolute;
-  left: 64px;
+  left: 60px;
   margin-right: 8px;
 }
 
