@@ -1,3 +1,4 @@
+/*##################### LOCATION #####################*/
 #location{
     display: flex;
     flex-direction: row;
@@ -14,6 +15,7 @@
         margin-right: 12px;
     }
 }
+/*##################### PRESENTATION #####################*/
 #presentation{
     background-color: $color-special-background;
     width: 100%;
@@ -33,9 +35,142 @@
         margin-bottom: 24px;
     }
 }
+/*##################### TUTORIAL #####################*/
 #tutorial{
-    width: 100%;
     background-color: $color-common-background;
+    ol{
+        width: 100%;
+        list-style-type: decimal;
+        list-style-position: inside;
+        list-style: none;
+        counter-reset: my-awesome-counter;
+        li{
+            position: relative;
+            width: 100%;
+            height: 64px;
+            border-radius: 15px;
+            box-shadow: 0px 5px 10px $color-shadow-2;
+            background-color: $color-special-background;
+            counter-increment: my-awesome-counter;
+            margin-bottom: 22px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            z-index: 1;
+            &:hover{
+                cursor: pointer;
+                i{
+                    color: $color-primary;
+                }
+                &::after{
+                    opacity: 0.1;
+                }
+            }
+            &::before {
+                content: counter(my-awesome-counter);
+                position: relative;
+                left: -10px;
+                //transform: translateX(-10px);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                font-weight: bold;
+                font-size: 12px;
+                background-color: $color-primary;
+                width: 20px;
+                height: 20px;
+                border-radius: 100%;
+            }
+            &::after{
+                content: "";
+                border-radius: inherit;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: $color-secondary;
+                opacity: 0.0;
+                z-index: -1;
+                transition: $main-tutorial-transition-propreties;
+            }
+            i{
+                position: absolute;
+                left: 26px;
+                font-size: 15px;
+                color: $color-dark-2;
+                margin-left: 3px;
+                margin-right: 3px;
+                transition: $main-tutorial-transition-propreties;
+            }
+            p{
+                position: absolute;
+                left: 64px;
+                margin-right: 8px;
+            }
+        }
+    }
+}
+/*##################### RESTAURANTS #####################*/
+#restaurants{
+    background-color: $color-special-background;
+    ul{
+        width: 100%;
+    }
+}
+.restaurant{
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 5px 10px $color-shadow-2;
+    overflow: hidden;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    &-thumbnail{
+        position: relative;
+        width: 100%;
+        height: 174px;
+        overflow: hidden;
+        &-content{
+            width: 100%;
+            height: 100%;
+            object-fit : cover;
+            position: relative;
+            /*position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -70%);*/
+        }
+    }
+    &-body{
+        text-align: left;
+        width: 100%;
+        padding: 14px;
+        padding-right: 18px;
+        h4,p{
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+    }
+    i{
+        background: linear-gradient(to bottom, #e72c83 0%,#a742c6 100%);
+        background:-moz-linear-gradient(top, #e72c83 0%, #a742c6 100%); 
+        background: -webkit-linear-gradient(top, #e72c83 0%,#a742c6 100%); 
+        background-clip: text;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+.index-category{
+    width: 100%;
     padding-left: 20px;
     padding-right: 20px;
     display: flex;
@@ -46,17 +181,8 @@
         margin-top: 38px;
         margin-bottom: 24px;
     }
-    ol{
-        width: 100%;
-        li{
-            width: 100%;
-            background-color: aqua;
-        }
-    }
 }
-nav{
-    background-color: $color-special-background;
-}
+/*##################### MODIFIERS #####################*/
 .main-button{
     margin-bottom: 48px;
 }

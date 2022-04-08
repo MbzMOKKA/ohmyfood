@@ -19,7 +19,7 @@
         <main>
             <!--Current location for the results-->
             <div id="location">
-                <i id="map_icon" class="fa fa-map-marker-alt"></i>
+                <i class="fas fa-map-marker-alt"></i>
                 <p><strong>Paris, Belleville</strong></p>
             </div>
             <!--Quick presentation of what the site is about-->
@@ -29,19 +29,33 @@
                 <div class="main-button"><a href="#restaurants"><p><strong>Explorer nos restaurants</strong></p></a></div>
             </div>
             <!--Quick explanation of how the site works-->
-            <div id="tutorial">
+            <div class="index-category" id="tutorial">
                 <h2>Fonctionnement</h2>
                 <ol>
-                    <li><p><strong>Choisissez un restaurant</strong></p></li>
-                    <li><p><strong>Composez votre menu</strong></p></li>
-                    <li><p><strong>Dégustez au restaurant</strong></p></li>
+                    <li><i class="fas fa-mobile-alt"></i><p><strong>Choisissez un restaurant</strong></p></li>
+                    <li><i class="fas fa-list-ul"></i><p><strong>Composez votre menu</strong></p></li>
+                    <li><i class="fas fa-store"></i><p><strong>Dégustez au restaurant</strong></p></li>
                 </ol>
             </div>
             <!--Restaurants-->
-            <nav id="restaurants">
+            <nav class="index-category" id="restaurants">
                 <h2>Restaurants</h2>
                 <ul>
-                    <li></li>
+                    <li class="restaurant">
+                        <a href="restaurant_la_palette_du_gout.html">
+                            <div class="restaurant-thumbnail">
+                                <img class="restaurant-thumbnail-content" src="assets/restaurant_la_palette_du_gout.jpg" alt="Illustration de l'hôtel Le soleil du matin">
+                            </div>
+                            <div class="restaurant-body">
+                                <h4 title="La palette du goût">La palette du goût</h4>
+                                <p title="Ménilmontant">Ménilmontant</p>
+                                <!--
+                                <i class="fas fa-heart"></i>
+                                <i class="far fa-heart"></i>
+                                -->
+                            </div>
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </main>
