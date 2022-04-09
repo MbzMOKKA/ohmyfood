@@ -11,62 +11,68 @@
     </head>
 
     <body>
-        <!--Head of the page-->
-        <header>
-            <div class="header_back-button"><a href="index.html"><i class="fas fa-arrow-left"></i></a></div>
+        <div id="page-loading">
             <img src="assets/ohmyfood.png"/>
-        </header>
-        <main>
-            <!--Current location for the results-->
-            <div id="location">
-                <i class="fas fa-map-marker-alt"></i>
-                <p><strong>Paris, Belleville</strong></p>
-            </div>
-            <!--Quick presentation of what the site is about-->
-            <div id="presentation">
-                <h2>Réservez le menu qui vous convient</h2>
-                <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-                <div class="main-button"><a href="#restaurants"><p><strong>Explorer nos restaurants</strong></p></a></div>
-            </div>
-            <!--Quick explanation of how the site works-->
-            <div class="index-category" id="tutorial">
-                <h2>Fonctionnement</h2>
-                <ol>
-                    <li><i class="fas fa-mobile-alt"></i><p><strong>Choisissez un restaurant</strong></p></li>
-                    <li><i class="fas fa-list-ul"></i><p><strong>Composez votre menu</strong></p></li>
-                    <li><i class="fas fa-store"></i><p><strong>Dégustez au restaurant</strong></p></li>
-                </ol>
-            </div>
-            <!--Restaurants-->
-            <nav class="index-category" id="restaurants">
-                <h2>Restaurants</h2>
+            <i class="fas fa-spinner fa-fw fa-spin"></i>
+        </div>
+        <div id="page-content">
+            <!--Head of the page-->
+            <header>
+                <div class="header_back-button"><a href="index.html"><i class="fas fa-arrow-left"></i></a></div>
+                <img src="assets/ohmyfood.png"/>
+            </header>
+            <main>
+                <!--Current location for the results-->
+                <div id="location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p><strong>Paris, Belleville</strong></p>
+                </div>
+                <!--Quick presentation of what the site is about-->
+                <div id="presentation">
+                    <h2>Réservez le menu qui vous convient</h2>
+                    <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+                    <div class="main-button"><a href="#restaurants"><p><strong>Explorer nos restaurants</strong></p></a></div>
+                </div>
+                <!--Quick explanation of how the site works-->
+                <div class="index-category" id="tutorial">
+                    <h2>Fonctionnement</h2>
+                    <ol>
+                        <li><i class="fas fa-mobile-alt fa-fw"></i><p><strong>Choisissez un restaurant</strong></p></li>
+                        <li><i class="fas fa-list-ul fa-fw"></i><p><strong>Composez votre menu</strong></p></li>
+                        <li><i class="fas fa-store fa-fw"></i><p><strong>Dégustez au restaurant</strong></p></li>
+                    </ol>
+                </div>
+                <!--Restaurants-->
+                <nav class="index-category" id="restaurants">
+                    <h2>Restaurants</h2>
+                    <ul>
+                        <li class="restaurant">
+                            <a href="restaurant_la_palette_du_gout.html">
+                                <div class="restaurant-thumbnail">
+                                    <img class="restaurant-thumbnail-content" src="assets/restaurant_la_palette_du_gout.jpg" alt="Illustration de l'hôtel Le soleil du matin">
+                                </div>
+                                <div class="restaurant-body">
+                                    <h4 title="La palette du goût">La palette du goût</h4>
+                                    <p title="Ménilmontant">Ménilmontant</p>
+                                    <!--
+                                    <i class="fas fa-heart"></i>
+                                    <i class="far fa-heart"></i>
+                                    -->
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </main>
+            <!--Foot of the page-->
+            <footer> 
+                <img src="assets/ohmyfood.png"/>
                 <ul>
-                    <li class="restaurant">
-                        <a href="restaurant_la_palette_du_gout.html">
-                            <div class="restaurant-thumbnail">
-                                <img class="restaurant-thumbnail-content" src="assets/restaurant_la_palette_du_gout.jpg" alt="Illustration de l'hôtel Le soleil du matin">
-                            </div>
-                            <div class="restaurant-body">
-                                <h4 title="La palette du goût">La palette du goût</h4>
-                                <p title="Ménilmontant">Ménilmontant</p>
-                                <!--
-                                <i class="fas fa-heart"></i>
-                                <i class="far fa-heart"></i>
-                                -->
-                            </div>
-                        </a>
-                    </li>
+                    <li><a href="#"><i class="fas fa-utensils fa-fw"></i><strong>Proposer un restaurant</strong></a></li>
+                    <li><a href="#"><i class="fas fa-hands-helping fa-fw"></i><strong>Devenir partenaire</strong></a></li>
+                    <li><a href="#"><strong>Mentions légales</strong></a></li>
+                    <li><a href="mailto:contact@ohmyfood.com"><strong>Contact</strong></a></li>
                 </ul>
-            </nav>
-        </main>
-        <!--Foot of the page-->
-        <footer> 
-            <img src="assets/ohmyfood.png"/>
-            <ul>
-                <li><a href="#"><i class="fas fa-utensils"></i><strong>Proposer un restaurant</strong></a></li>
-                <li><a href="#"><i class="fas fa-hands-helping"></i><strong>Devenir partenaire</strong></a></li>
-                <li><a href="#"><strong>Mentions légales</strong></a></li>
-                <li><a href="mailto:contact@ohmyfood.com"><strong>Contact</strong></a></li>
-            </ul>
-        </footer>
+            </footer>
+        </div>
     </body>

@@ -1,0 +1,16 @@
+@keyframes anim-loading-loader{
+    0%{
+        
+    }
+    100%{
+        transform: translateX($loading-translate-max);
+    }
+}
+@keyframes anim-loading-content{
+    0%{
+        
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
