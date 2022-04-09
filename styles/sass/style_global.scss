@@ -19,5 +19,18 @@
             width: 200px;
             height: auto;
         }
+        #back-button{
+            left: $page-padding-desktop;
+        }
+    }
+    .footer{
+        padding-left: $page-padding-desktop;
+        padding-right: $page-padding-desktop;
+        img{
+            margin-left: 0%;
+        }
+        ul{
+            padding-left: 0%;
+        }
     }
 }

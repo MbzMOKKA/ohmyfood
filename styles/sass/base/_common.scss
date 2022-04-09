@@ -5,7 +5,7 @@
     overflow: hidden;
     width: 65%;
     max-width: 400px;
-    box-shadow: 0px 6px 10px $color-shadow;
+    box-shadow: 0px 6px 9px $color-shadow;
     transition: $main-button-transition-propreties;
     z-index: 1;
     &::after{
@@ -21,7 +21,7 @@
         transition: $main-button-transition-propreties;
     }
     &:hover{
-        box-shadow: 0px 8px 10px $color-secondary;
+        box-shadow: 0px 8px 18px $color-secondary;
         &::after{
             opacity: 0.15;
         }

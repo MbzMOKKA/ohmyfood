@@ -15,5 +15,19 @@
 /*########## Desktop only ##########*/
 
 @media screen and (min-width: $width-desktop-min){
-    
+    .index-category{
+        padding-left: $page-padding-desktop;
+        padding-right: $page-padding-desktop;
+    }
+    #restaurants{
+        ul{
+            justify-content: space-between;
+        }
+    }
+    .restaurant{
+        width: 32%;
+        &-thumbnail{
+            height: 225px;
+        }
+    }
 }

@@ -18,7 +18,7 @@
         <div id="page-content">
             <!--Head of the page-->
             <header>
-                <div class="header_back-button"><a href="index.html"><i class="fas fa-arrow-left"></i></a></div>
+                <!--<div class="header-back" id="back-button"><a href="index.html"><i class="fas fa-arrow-left"></i></a></div>-->
                 <img src="assets/ohmyfood.png"/>
             </header>
             <main>
@@ -46,18 +46,51 @@
                 <nav class="index-category" id="restaurants">
                     <h2>Restaurants</h2>
                     <ul>
-                        <li class="restaurant">
+                        <li class="restaurant tag-new">
                             <a href="restaurant_la_palette_du_gout.html">
                                 <div class="restaurant-thumbnail">
-                                    <img class="restaurant-thumbnail-content" src="assets/restaurant_la_palette_du_gout.jpg" alt="Illustration de l'hôtel Le soleil du matin">
+                                    <img class="restaurant-thumbnail-content" src="assets/restaurant_la_palette_du_gout.jpg" alt="Illustration menu">
                                 </div>
                                 <div class="restaurant-body">
                                     <h4 title="La palette du goût">La palette du goût</h4>
                                     <p title="Ménilmontant">Ménilmontant</p>
-                                    <!--
-                                    <i class="fas fa-heart"></i>
-                                    <i class="far fa-heart"></i>
-                                    -->
+                                    <i class="fa-regular fa-heart button-like"><i class="fa-solid fa-heart button-like-full"></i></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="restaurant tag-new">
+                            <a href="restaurant_la_note_enchantee.html">
+                                <div class="restaurant-thumbnail">
+                                    <img class="restaurant-thumbnail-content" src="assets/restaurant_la_note_enchantee.jpg" alt="Illustration menu">
+                                </div>
+                                <div class="restaurant-body">
+                                    <h4 title="La note enchantée">La note enchantée</h4>
+                                    <p title="Charonne">Charonne</p>
+                                    <i class="fa-regular fa-heart button-like"><i class="fa-solid fa-heart button-like-full"></i></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="restaurant">
+                            <a href="restaurant_a_la_francaise.html">
+                                <div class="restaurant-thumbnail">
+                                    <img class="restaurant-thumbnail-content" src="assets/restaurant_a_la_francaise.jpg" alt="Illustration menu">
+                                </div>
+                                <div class="restaurant-body">
+                                    <h4 title="À la française">À la française</h4>
+                                    <p title="Cité Rouge">Cité Rouge</p>
+                                    <i class="fa-regular fa-heart button-like"><i class="fa-solid fa-heart button-like-full"></i></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="restaurant">
+                            <a href="restaurant_le_delice_des_sens.html">
+                                <div class="restaurant-thumbnail">
+                                    <img class="restaurant-thumbnail-content" src="assets/restaurant_le_delice_des_sens.jpg" alt="Illustration menu">
+                                </div>
+                                <div class="restaurant-body">
+                                    <h4 title="Le délice des sens">Le délice des sens</h4>
+                                    <p title="Folie-Méricourt">Folie-Méricourt</p>
+                                    <i class="fa-regular fa-heart button-like"><i class="fa-solid fa-heart button-like-full"></i></i>
                                 </div>
                             </a>
                         </li>
@@ -65,11 +98,11 @@
                 </nav>
             </main>
             <!--Foot of the page-->
-            <footer> 
-                <img src="assets/ohmyfood.png"/>
-                <ul>
-                    <li><a href="#"><i class="fas fa-utensils fa-fw"></i><strong>Proposer un restaurant</strong></a></li>
-                    <li><a href="#"><i class="fas fa-hands-helping fa-fw"></i><strong>Devenir partenaire</strong></a></li>
+            <footer class="footer"> 
+                <img src="assets/ohmyfood.png" class="footer-img"/>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fa-solid fa-utensils fa-fw"></i></i><strong>Proposer un restaurant</strong></a></li>
+                    <li><a href="#"><i class="fa-solid fa-handshake-angle fa-fw"></i></i><strong>Devenir partenaire</strong></a></li>
                     <li><a href="#"><strong>Mentions légales</strong></a></li>
                     <li><a href="mailto:contact@ohmyfood.com"><strong>Contact</strong></a></li>
                 </ul>

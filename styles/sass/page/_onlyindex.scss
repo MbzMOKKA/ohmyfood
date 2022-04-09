@@ -71,6 +71,7 @@
         list-style-position: inside;
         list-style: none;
         counter-reset: my-awesome-counter;
+        margin-bottom: 36px;
         li{
             position: relative;
             left: 10px;
@@ -92,7 +93,7 @@
                     color: $color-primary;
                 }
                 &::after{
-                    opacity: 0.1;
+                    opacity: 0.2;
                 }
             }
             &::before {
@@ -118,10 +119,10 @@
                 top: 0;
                 width: 100%;
                 height: 100%;
-                background-color: $color-secondary;
+                background-color: $color-primary;
                 opacity: 0.0;
                 z-index: -1;
-                transition: $main-tutorial-transition-propreties;
+                transition: $tutorial-transition-propreties;
             }
             i{
                 position: absolute;
@@ -130,7 +131,7 @@
                 color: $color-dark-2;
                 margin-left: 3px;
                 margin-right: 3px;
-                transition: $main-tutorial-transition-propreties;
+                transition: $tutorial-transition-propreties;
             }
             p{
                 position: absolute;
@@ -145,56 +146,101 @@
     background-color: $color-special-background;
     ul{
         width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 36px;
+    }
+}
+.tag-new{
+    &::before{
+        content: "Nouveau";
+        background-color: $color-tertiary;
+        color: darken($color-tertiary,35%);
+        border-radius: 5px;
+        z-index: 2;
+        font-size: 15px;
+        padding: 9px;
+        padding-left: 14px;
+        padding-right: 14px;
+        position: absolute;
+        top: 12px;
+        right: 12px;
     }
 }
 .restaurant{
+    position: relative;
     background-color: white;
     border-radius: 15px;
     box-shadow: 0px 5px 10px $color-shadow-2;
     overflow: hidden;
     width: 100%;
-    max-width: 400px;
     margin-bottom: 18px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    transition: $restaurant-transition-propreties;
+    &:hover{
+        box-shadow: 0px 5px 16px $color-tertiary;
+        .restaurant-thumbnail{
+            &-content{
+                transform: scale(1.15);
+            }
+        }
+    }
     &-thumbnail{
         position: relative;
         width: 100%;
-        height: 174px;
+        height: 185px;
         overflow: hidden;
         &-content{
             width: 100%;
             height: 100%;
             object-fit : cover;
-            position: relative;
-            /*position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -70%);*/
+            transform: scale(1);
+            transition: $restaurant-transition-propreties;
         }
     }
     &-body{
+        position: relative;
         text-align: left;
         width: 100%;
         padding: 14px;
-        padding-right: 18px;
+        padding-right: $like-button-size*2.2;
         h4,p{
             text-overflow: ellipsis;
             overflow: hidden;
             white-space: nowrap;
         }
     }
-    i{
-        background: linear-gradient(to bottom, #e72c83 0%,#a742c6 100%);
-        background:-moz-linear-gradient(top, #e72c83 0%, #a742c6 100%); 
-        background: -webkit-linear-gradient(top, #e72c83 0%,#a742c6 100%); 
-        background-clip: text;
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        -webkit-text-fill-color: transparent;
+    .button-like{
+        position: absolute;
+        right: 18px;
+        top: 18px;
+        font-size: $like-button-size;
+        &:hover .button-like-full{
+            transform: scale(1);
+        }
+        &-full{
+            transform: scale(0);
+            font-size: $like-button-size;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: linear-gradient(to bottom, $color-primary 0%, $color-secondary 100%);
+            background:-moz-linear-gradient(top, $color-primary 0%, $color-secondary 100%); 
+            background: -webkit-linear-gradient(top, $color-primary 0%, $color-secondary 100%); 
+            background-clip: text;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: $like-button-transition-propreties;
+        }
     }
 }
+/*##################### COMMON #####################*/
 .index-category{
     width: 100%;
     padding-left: 20px;
@@ -204,7 +250,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     &>h2{
-        margin-top: 38px;
+        margin-top: 42px;
         margin-bottom: 24px;
     }
 }
