@@ -20,11 +20,11 @@
     border-top-right-radius: $border-menu-size;
     position: relative;
     top: -1*$border-menu-size;
-    height: 800px;
     margin-bottom: -1*$border-menu-size;
     padding-top: ($border-menu-size)-(14px);
     padding-left: 14px;
     padding-right: 14px;
+    padding-bottom: 58px;
     /*##################### TOP INFOS #####################*/
     &-info{
         padding-left: 6px;
@@ -57,4 +57,8 @@
             }
         }
     }
+}
+/*##################### MODIFIERS #####################*/
+.main-button{
+    width: 50%;
 }
