@@ -19,8 +19,10 @@ a{
 }
 /*Name of the menu in its own page*/
 h1{
-    color: $color-primary;
     @include font-shrikhand();
+    font-size: 28px;
+    padding: 0;
+    margin: 0;
 }
 /*Name of a part of the site*/
 h2{
@@ -29,7 +31,9 @@ h2{
 }
 /*Name of a food category*/
 h3{
-    text-decoration: underline;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: $size-menu-category-text;
 }
 /*Name of the menu in the index*/
 h4{

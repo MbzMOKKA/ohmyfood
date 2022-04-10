@@ -46,3 +46,24 @@
         color: white;
     }
 }
+.button-like{
+    font-size: $like-button-size;
+    &:hover .button-like-full{
+        transform: scale(1.1);
+    }
+    &-full{
+        transform: scale(0);
+        font-size: $like-button-size;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: linear-gradient(to bottom, $color-primary 0%, $color-secondary 100%);
+        background:-moz-linear-gradient(top, $color-primary 0%, $color-secondary 100%); 
+        background: -webkit-linear-gradient(top, $color-primary 0%, $color-secondary 100%); 
+        background-clip: text;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: $like-button-transition-propreties;
+    }
+}
