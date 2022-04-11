@@ -26,29 +26,62 @@
                     <!--Menu infos-->
                     <div class="menu-info">
                         <h1>La palette du goût</h1>
-                        <button class="button__like"><i class="fa-regular fa-heart button__like-border"><i class="fa-solid fa-heart button__like-full"></i></i></button>
+                        <button class="button__like" title="Mettre en favoris"><i class="fa-regular fa-heart button__like-border"><i class="fa-solid fa-heart button__like-full"></i></i></button>
                     </div>
                     <!--Menu form-->
                     <form class="menu-form" method="post" action="command_process.php">
-                        <!--Menu entries-->
-                        <fieldset>
-                            <legend><h3>Entrées</h3></legend>
-                            <input type="checkbox" id="scales1" name="scales1" class="menu-form__checkbox">
-                            <label for="scales1" class="menu-form__label">
-                                <h4>Fricassée d'escargot</h4>
-                                <p class="menu-form__label__subtxt">Au piment d'espelette</p>
-                            </label>
-                        </fieldset>  
-                        <!--Menu items-->
-                        <fieldset>
-                            <legend><h3>Plats</h3></legend>
-                        </fieldset>
-                        <!--Menu desserts-->
-                        <fieldset>
-                            <legend><h3>Desserts</h3></legend>
-                        </fieldset>
+                        <div class="menu-form-choices">
+                            <!--Menu entries-->
+                            <fieldset>
+                                <legend><h3>Entrées</h3></legend>
+                                <!--#1-->
+                                <input type="checkbox" id="item-1" name="item-1" value="item-1" class="menu-form-checkbox">
+                                <label for="item-1" class="menu-form-label">
+                                    <div class="menu-form-label-content">
+                                        <div class="menu-form-label-content-texts">
+                                            <div class="menu-form-label-content-texts-name">
+                                                <h4 title="Fricassée d'escargot">Fricassée d'escargot</h4>
+                                                <p title="Au piment d'espelette">Au piment d'espelette</p>
+                                            </div>
+                                            <div class="menu-form-label-content-texts-cost">
+                                                <p><strong title="25€">25€</strong></p>
+                                            </div>
+                                        </div>
+                                        <div class="menu-form-label-content-checked">
+                                            <i class="fa-solid fa-circle-check fa-fw"></i>
+                                        </div>
+                                    </div>
+                                </label>
+                                <!--#2-->
+                                <input type="checkbox" id="item-2" name="item-" value="item-2" class="menu-form-checkbox">
+                                <label for="item-2" class="menu-form-label">
+                                    <div class="menu-form-label-content">
+                                        <div class="menu-form-label-content-texts">
+                                            <div class="menu-form-label-content-texts-name">
+                                                <h4 title="Foie gras de canard mi-cuit">Foie gras de canard mi-cuit</h4>
+                                                <p title="Et ses copeaux de truffe noire">Et ses copeaux de truffe noire</p>
+                                            </div>
+                                            <div class="menu-form-label-content-texts-cost">
+                                                <p><strong title="35€">35€</strong></p>
+                                            </div>
+                                        </div>
+                                        <div class="menu-form-label-content-checked">
+                                            <i class="fa-solid fa-circle-check fa-fw"></i>
+                                        </div>
+                                    </div>
+                                </label>
+                            </fieldset>  
+                            <!--Menu items-->
+                            <fieldset>
+                                <legend><h3>Plats</h3></legend>
+                            </fieldset>
+                            <!--Menu desserts-->
+                            <fieldset>
+                                <legend><h3>Desserts</h3></legend>
+                            </fieldset>
+                        </div>
                         <!--Command button-->
-                        <button class="button__main"><p><strong>Commander</strong></p></button>
+                        <button class="button__main" type="submit"><p><strong>Commander</strong></p></button>
                     </form>
                 </div>
             </main>
