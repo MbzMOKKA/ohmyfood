@@ -13,32 +13,42 @@
     <body>
         <div id="page-content">
             <!--Head of the page-->
-            <header>
-                <div class="header-back" id="back-button"><a href="index.html#restaurants"><i class="fas fa-arrow-left"></i></a></div>
+            <header class="header">
+                <div class="header-back" id="button__back"><a href="index.html#restaurants"><i class="fas fa-arrow-left"></i></a></div>
                 <img src="assets/ohmyfood.png"/>
             </header>
             <main>
+                <!--Menu image in the background-->
                 <div class="restaurant-background">
                     <img class="restaurant-background-content" src="assets/restaurant_la_palette_du_gout.jpg" alt="Illustration menu">
                 </div>
                 <div class="menu">
+                    <!--Menu infos-->
                     <div class="menu-info">
                         <h1>La palette du goût</h1>
-                        <button class="button-like"><i class="fa-regular fa-heart button-like-border"><i class="fa-solid fa-heart button-like-full"></i></i></button>
+                        <button class="button__like"><i class="fa-regular fa-heart button__like-border"><i class="fa-solid fa-heart button__like-full"></i></i></button>
                     </div>
-                    <form class="menu-form">
-                        <div class="menu-form-category">
-                            <h3>Entrées</h3>
-                        </div>
-                            <input type="checkbox" id="scales1" name="scales" checked>
-                            <label for="scales1">Scales</label>
-                        <div class="menu-form-category">
-                            <h3>Plats</h3>
-                        </div>
-                        <div class="menu-form-category">
-                            <h3>Desserts</h3>
-                        </div>
-                        <button class="main-button"><p><strong>Commander</strong></p></button>
+                    <!--Menu form-->
+                    <form class="menu-form" method="post" action="command_process.php">
+                        <!--Menu entries-->
+                        <fieldset>
+                            <legend><h3>Entrées</h3></legend>
+                            <input type="checkbox" id="scales1" name="scales1" class="menu-form__checkbox">
+                            <label for="scales1" class="menu-form__label">
+                                <h4>Fricassée d'escargot</h4>
+                                <p class="menu-form__label__subtxt">Au piment d'espelette</p>
+                            </label>
+                        </fieldset>  
+                        <!--Menu items-->
+                        <fieldset>
+                            <legend><h3>Plats</h3></legend>
+                        </fieldset>
+                        <!--Menu desserts-->
+                        <fieldset>
+                            <legend><h3>Desserts</h3></legend>
+                        </fieldset>
+                        <!--Command button-->
+                        <button class="button__main"><p><strong>Commander</strong></p></button>
                     </form>
                 </div>
             </main>

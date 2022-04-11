@@ -106,7 +106,7 @@ body {
   background-color: #EAEAEA;
 }
 
-header {
+.header {
   position: relative;
   width: 100%;
   height: 60px;
@@ -117,7 +117,7 @@ header {
           box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.4);
 }
 
-header .header-back {
+.header-back {
   position: absolute;
   left: 14px;
   top: 55%;
@@ -127,17 +127,17 @@ header .header-back {
   height: 40px;
 }
 
-header .header-back a {
+.header-back a {
   width: 100%;
   height: 100%;
 }
 
-header .header-back a:hover i {
+.header-back a:hover i {
   color: white;
   background-color: #353535;
 }
 
-header .header-back a i {
+.header-back a i {
   width: 100%;
   height: 100%;
   font-size: 20px;
@@ -165,7 +165,7 @@ header .header-back a i {
           transition-timing-function: ease;
 }
 
-header img {
+.header img {
   position: absolute;
   left: 50%;
   top: 55%;
@@ -213,7 +213,7 @@ header img {
   margin-right: 8px;
 }
 
-.main-button {
+.button__main {
   position: relative;
   background-image: linear-gradient(-5deg, #9356DC, #FF79DA);
   border: none;
@@ -244,7 +244,7 @@ header img {
   height: 100%;
 }
 
-.main-button::after {
+.button__main::after {
   content: "";
   position: absolute;
   left: 0;
@@ -258,17 +258,17 @@ header img {
   transition: all 200ms ease;
 }
 
-.main-button:hover {
+.button__main:hover {
   cursor: pointer;
   -webkit-box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.6);
           box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.6);
 }
 
-.main-button:hover::after {
+.button__main:hover::after {
   opacity: 0.15;
 }
 
-.main-button a {
+.button__main a {
   border-radius: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -287,7 +287,7 @@ header img {
   height: 100%;
 }
 
-.main-button p {
+.button__main p {
   width: 100%;
   height: 100%;
   text-align: center;
@@ -297,12 +297,12 @@ header img {
   margin-right: 6px;
 }
 
-.main-button strong {
+.button__main strong {
   text-align: center;
   color: white;
 }
 
-.button-like {
+.button__like {
   background: none;
   border: none;
   border-radius: 11.5px;
@@ -321,25 +321,25 @@ header img {
           align-items: center;
 }
 
-.button-like:hover {
+.button__like:hover {
   cursor: pointer;
 }
 
-.button-like:hover .button-like-full {
+.button__like:hover .button__like-full {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-.button-like:active .button-like-full {
+.button__like:active .button__like-full {
   -webkit-transform: scale(1.7);
           transform: scale(1.7);
 }
 
-.button-like-border {
+.button__like-border {
   font-size: 23px;
 }
 
-.button-like-full {
+.button__like-full {
   -webkit-transform: scale(0);
           transform: scale(0);
   font-size: 23px;
@@ -360,7 +360,7 @@ header img {
 
 /*########## Tablet and smartphone ##########*/
 /*##################### LOADING #####################*/
-#page-loading {
+#page_loading {
   width: 100%;
   height: 100%;
   position: fixed;
@@ -385,18 +385,18 @@ header img {
           align-items: center;
 }
 
-#page-loading img {
+#page_loading img {
   min-width: 200px;
   width: 18vw;
   margin-bottom: 4vh;
 }
 
-#page-loading i {
+#page_loading i {
   color: #9356DC;
   font-size: 8vh;
 }
 
-#page-content {
+#page_content {
   -webkit-transform: translateX(-9999px);
           transform: translateX(-9999px);
   -webkit-animation: anim-loading-loader 0ms ease 0ms forwards;
@@ -464,7 +464,7 @@ header img {
   margin-bottom: 24px;
 }
 
-.main-button {
+.button__main {
   width: 65%;
   margin-bottom: 48px;
 }
@@ -605,7 +605,7 @@ header img {
   margin-bottom: 36px;
 }
 
-.tag-new::before {
+.tag__new::before {
   content: "Nouveau";
   background-color: #99E2D0;
   color: #2c9c81;
@@ -685,14 +685,14 @@ header img {
   white-space: nowrap;
 }
 
-.restaurant .button-like {
+.restaurant .button__like {
   position: absolute;
   right: 18px;
   top: 203px;
 }
 
 /*##################### COMMON #####################*/
-.index-category {
+.index_category {
   width: 100%;
   padding-left: 20px;
   padding-right: 20px;
@@ -711,14 +711,14 @@ header img {
           align-items: flex-start;
 }
 
-.index-category > h2 {
+.index_category > h2 {
   margin-top: 42px;
   margin-bottom: 24px;
 }
 
 /*########## Desktop only ##########*/
 @media screen and (min-width: 992px) {
-  .index-category {
+  .index_category {
     padding-left: 25%;
     padding-right: 25%;
   }
@@ -733,7 +733,7 @@ header img {
   .restaurant-thumbnail {
     height: 225px;
   }
-  .restaurant .button-like {
+  .restaurant .button__like {
     top: 243px;
   }
 }

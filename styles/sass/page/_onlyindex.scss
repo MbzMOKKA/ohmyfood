@@ -1,5 +1,5 @@
 /*##################### LOADING #####################*/
-#page-loading{
+#page_loading{
     width: 100%;
     height: 100%;
     position: fixed;
@@ -20,7 +20,7 @@
         font-size: 8vh;
     }
 }
-#page-content{
+#page_content{
     transform: translateX($loading-translate-max);
     animation: $loading-animation-propreties;
     animation-name: anim-loading-content;
@@ -62,7 +62,7 @@
         margin-bottom: 24px;
     }
 }
-.main-button{
+.button__main{
     width: 65%;
     margin-bottom: 48px;
 }
@@ -158,7 +158,7 @@
         margin-bottom: 36px;
     }
 }
-.tag-new{
+.tag__new{
     &::before{
         content: "Nouveau";
         background-color: $color-tertiary;
@@ -219,14 +219,14 @@
             white-space: nowrap;
         }
     }
-    .button-like{
+    .button__like{
         position: absolute;
         right: 18px;
         top: ($height-restaurant-thumbnail)+(18px);
     }
 }
 /*##################### COMMON #####################*/
-.index-category{
+.index_category{
     width: 100%;
     padding-left: 20px;
     padding-right: 20px;

@@ -11,13 +11,13 @@
     </head>
 
     <body>
-        <div id="page-loading">
+        <div id="page_loading">
             <img src="assets/ohmyfood.png"/>
             <i class="fas fa-spinner fa-fw fa-spin"></i>
         </div>
-        <div id="page-content">
+        <div id="page_content">
             <!--Head of the page-->
-            <header>
+            <header class="header">
                 <img src="assets/ohmyfood.png"/>
             </header>
             <main>
@@ -30,10 +30,10 @@
                 <div id="presentation">
                     <h2>Réservez le menu qui vous convient</h2>
                     <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-                    <button class="main-button"><a href="#restaurants"><p><strong>Explorer nos restaurants</strong></p></a></button>
+                    <button class="button__main"><a href="#restaurants"><p><strong>Explorer nos restaurants</strong></p></a></button>
                 </div>
                 <!--Quick explanation of how the site works-->
-                <div class="index-category" id="tutorial">
+                <div class="index_category" id="tutorial">
                     <h2>Fonctionnement</h2>
                     <ol>
                         <li><i class="fas fa-mobile-alt fa-fw"></i><p><strong>Choisissez un restaurant</strong></p></li>
@@ -42,10 +42,11 @@
                     </ol>
                 </div>
                 <!--Restaurants-->
-                <nav class="index-category" id="restaurants">
+                
+                <nav class="index_category" id="restaurants">
                     <h2>Restaurants</h2>
                     <ul>
-                        <li class="restaurant tag-new">
+                        <li class="restaurant tag__new">
                             <a href="restaurant_la_palette_du_gout.html">
                                 <div class="restaurant-thumbnail">
                                     <img class="restaurant-thumbnail-content" src="assets/restaurant_la_palette_du_gout.jpg" alt="Illustration menu">
@@ -55,9 +56,9 @@
                                     <p title="Ménilmontant">Ménilmontant</p>
                                 </div>
                             </a>
-                            <button class="button-like"><i class="fa-regular fa-heart button-like-border"><i class="fa-solid fa-heart button-like-full"></i></i></button>
+                            <button class="button__like"><i class="fa-regular fa-heart button__like-border"><i class="fa-solid fa-heart button__like-full"></i></i></button>
                         </li>
-                        <li class="restaurant tag-new">
+                        <li class="restaurant tag__new">
                             <a href="restaurant_la_note_enchantee.html">
                                 <div class="restaurant-thumbnail">
                                     <img class="restaurant-thumbnail-content" src="assets/restaurant_la_note_enchantee.jpg" alt="Illustration menu">
@@ -67,7 +68,7 @@
                                     <p title="Charonne">Charonne</p>
                                 </div>
                             </a>
-                            <button class="button-like"><i class="fa-regular fa-heart button-like-border"><i class="fa-solid fa-heart button-like-full"></i></i></button>
+                            <button class="button__like"><i class="fa-regular fa-heart button__like-border"><i class="fa-solid fa-heart button__like-full"></i></i></button>
                         </li>
                         <li class="restaurant">
                             <a href="restaurant_a_la_francaise.html">
@@ -79,7 +80,7 @@
                                     <p title="Cité Rouge">Cité Rouge</p>
                                 </div>
                             </a>
-                            <button class="button-like"><i class="fa-regular fa-heart button-like-border"><i class="fa-solid fa-heart button-like-full"></i></i></button>
+                            <button class="button__like"><i class="fa-regular fa-heart button__like-border"><i class="fa-solid fa-heart button__like-full"></i></i></button>
                         </li>
                         <li class="restaurant">
                             <a href="restaurant_le_delice_des_sens.html">
@@ -91,7 +92,7 @@
                                     <p title="Folie-Méricourt">Folie-Méricourt</p>
                                 </div>
                             </a>
-                            <button class="button-like"><i class="fa-regular fa-heart button-like-border"><i class="fa-solid fa-heart button-like-full"></i></i></button>
+                            <button class="button__like"><i class="fa-regular fa-heart button__like-border"><i class="fa-solid fa-heart button__like-full"></i></i></button>
                         </li>
                     </ul>
                 </nav>

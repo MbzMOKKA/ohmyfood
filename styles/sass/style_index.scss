@@ -15,7 +15,7 @@
 /*########## Desktop only ##########*/
 
 @media screen and (min-width: $width-desktop-min){
-    .index-category{
+    .index_category{
         padding-left: $page-padding-desktop;
         padding-right: $page-padding-desktop;
     }
@@ -29,7 +29,7 @@
         &-thumbnail{
             height: $height-restaurant-thumbnail-desktop;
         }
-        .button-like{
+        .button__like{
             top: ($height-restaurant-thumbnail-desktop)+(18px);
         }
     }
