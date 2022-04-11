@@ -27,7 +27,10 @@
     .restaurant{
         width: 32%;
         &-thumbnail{
-            height: 225px;
+            height: $height-restaurant-thumbnail-desktop;
+        }
+        .button-like{
+            top: ($height-restaurant-thumbnail-desktop)+(18px);
         }
     }
 }

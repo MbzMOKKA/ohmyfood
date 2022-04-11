@@ -59,9 +59,26 @@
     }
 }
 .button-like{
-    font-size: $like-button-size;
-    &:hover .button-like-full{
-        transform: scale(1.1);
+    background: none;
+    border: none;
+    border-radius: ($like-button-size)/(2);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+        cursor: pointer;
+        .button-like-full{
+            transform: scale(1.1);
+        }
+    }
+    &:active{
+        .button-like-full{
+            transform: scale(1.7);
+        }
+    }
+    &-border{
+        font-size: $like-button-size;
     }
     &-full{
         transform: scale(0);
@@ -75,6 +92,7 @@
         background-clip: text;
         -webkit-background-clip: text;
         -moz-background-clip: text;
+        color: transparent;
         -webkit-text-fill-color: transparent;
         transition: $like-button-transition-propreties;
     }

@@ -62,6 +62,10 @@
         margin-bottom: 24px;
     }
 }
+.main-button{
+    width: 65%;
+    margin-bottom: 48px;
+}
 /*##################### TUTORIAL #####################*/
 #tutorial{
     background-color: $color-common-background;
@@ -193,7 +197,7 @@
     &-thumbnail{
         position: relative;
         width: 100%;
-        height: 185px;
+        height: $height-restaurant-thumbnail;
         overflow: hidden;
         &-content{
             width: 100%;
@@ -218,7 +222,7 @@
     .button-like{
         position: absolute;
         right: 18px;
-        top: 18px;
+        top: ($height-restaurant-thumbnail)+(18px);
     }
 }
 /*##################### COMMON #####################*/
@@ -234,9 +238,4 @@
         margin-top: 42px;
         margin-bottom: 24px;
     }
-}
-/*##################### MODIFIERS #####################*/
-.main-button{
-    width: 65%;
-    margin-bottom: 48px;
 }

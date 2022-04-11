@@ -303,7 +303,26 @@ header img {
 }
 
 .button-like {
-  font-size: 22px;
+  background: none;
+  border: none;
+  border-radius: 11.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.button-like:hover {
+  cursor: pointer;
 }
 
 .button-like:hover .button-like-full {
@@ -311,10 +330,19 @@ header img {
           transform: scale(1.1);
 }
 
+.button-like:active .button-like-full {
+  -webkit-transform: scale(1.7);
+          transform: scale(1.7);
+}
+
+.button-like-border {
+  font-size: 23px;
+}
+
 .button-like-full {
   -webkit-transform: scale(0);
           transform: scale(0);
-  font-size: 22px;
+  font-size: 23px;
   position: absolute;
   left: 0;
   top: 0;
@@ -324,6 +352,7 @@ header img {
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
+  color: transparent;
   -webkit-text-fill-color: transparent;
   -webkit-transition: all 1000ms cubic-bezier(0, 0.9, 0.1, 1);
   transition: all 1000ms cubic-bezier(0, 0.9, 0.1, 1);
@@ -433,6 +462,11 @@ header img {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 24px;
+}
+
+.main-button {
+  width: 65%;
+  margin-bottom: 48px;
 }
 
 /*##################### TUTORIAL #####################*/
@@ -642,7 +676,7 @@ header img {
   text-align: left;
   width: 100%;
   padding: 14px;
-  padding-right: 48.4px;
+  padding-right: 50.6px;
 }
 
 .restaurant-body h4, .restaurant-body p {
@@ -654,7 +688,7 @@ header img {
 .restaurant .button-like {
   position: absolute;
   right: 18px;
-  top: 18px;
+  top: 203px;
 }
 
 /*##################### COMMON #####################*/
@@ -682,12 +716,6 @@ header img {
   margin-bottom: 24px;
 }
 
-/*##################### MODIFIERS #####################*/
-.main-button {
-  width: 65%;
-  margin-bottom: 48px;
-}
-
 /*########## Desktop only ##########*/
 @media screen and (min-width: 992px) {
   .index-category {
@@ -704,6 +732,9 @@ header img {
   }
   .restaurant-thumbnail {
     height: 225px;
+  }
+  .restaurant .button-like {
+    top: 243px;
   }
 }
 /*# sourceMappingURL=style_index.css.map */
