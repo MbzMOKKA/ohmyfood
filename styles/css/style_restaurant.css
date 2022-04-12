@@ -588,8 +588,12 @@ body {
   padding-left: 12px;
 }
 
+.menu-form-label-content-texts-name h4 {
+  font-size: 16px;
+}
+
 .menu-form-label-content-texts-name p {
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .menu-form-label-content-texts-cost {

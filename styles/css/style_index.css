@@ -18,6 +18,28 @@
   }
 }
 
+@-webkit-keyframes anim-loading-loader-icon {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes anim-loading-loader-icon {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 @-webkit-keyframes anim-loading-content {
   0% {
   }
@@ -443,6 +465,8 @@ body {
 #page_loading i {
   color: #9356DC;
   font-size: 8vh;
+  -webkit-animation: anim-loading-loader-icon 1000ms linear infinite both;
+          animation: anim-loading-loader-icon 1000ms linear infinite both;
 }
 
 #page_content {

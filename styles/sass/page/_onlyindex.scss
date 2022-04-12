@@ -18,6 +18,7 @@
     i{
         color: $color-primary;
         font-size: 8vh;
+        animation: anim-loading-loader-icon 1000ms linear infinite both;
     }
 }
 #page_content{

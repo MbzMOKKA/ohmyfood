@@ -6,6 +6,14 @@
         transform: translateX($loading-translate-max);
     }
 }
+@keyframes anim-loading-loader-icon{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
 @keyframes anim-loading-content{
     0%{
         
