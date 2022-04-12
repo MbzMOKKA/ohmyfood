@@ -308,7 +308,6 @@ body {
 .button__like {
   background: none;
   border: none;
-  border-radius: 11.5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -339,13 +338,13 @@ body {
 }
 
 .button__like-border {
-  font-size: 23px;
+  font-size: 24px;
 }
 
 .button__like-full {
   -webkit-transform: scale(0);
           transform: scale(0);
-  font-size: 23px;
+  font-size: 24px;
   position: absolute;
   left: 0;
   top: 0;
@@ -389,9 +388,9 @@ body {
 }
 
 #page_loading img {
-  min-width: 200px;
-  width: 18vw;
-  margin-bottom: 4vh;
+  min-width: 220px;
+  width: 20vw;
+  margin-bottom: 5vh;
 }
 
 #page_loading i {
@@ -679,7 +678,7 @@ body {
   text-align: left;
   width: 100%;
   padding: 14px;
-  padding-right: 50.6px;
+  padding-right: 52.8px;
 }
 
 .restaurant-body h4, .restaurant-body p {

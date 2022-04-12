@@ -309,7 +309,6 @@ body {
 .button__like {
   background: none;
   border: none;
-  border-radius: 11.5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -340,13 +339,13 @@ body {
 }
 
 .button__like-border {
-  font-size: 23px;
+  font-size: 24px;
 }
 
 .button__like-full {
   -webkit-transform: scale(0);
           transform: scale(0);
-  font-size: 23px;
+  font-size: 24px;
   position: absolute;
   left: 0;
   top: 0;

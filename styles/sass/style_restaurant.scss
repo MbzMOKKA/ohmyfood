@@ -19,4 +19,10 @@
         padding-left: $page-padding-desktop;
         padding-right: $page-padding-desktop;
     }
+    .menu-form-label:hover{
+        cursor: pointer;
+        .menu-form-label-content-checked{
+            width: $menu-checkbox-height;
+        }
+    }
 }

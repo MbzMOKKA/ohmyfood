@@ -308,7 +308,6 @@ body {
 .button__like {
   background: none;
   border: none;
-  border-radius: 11.5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -339,13 +338,13 @@ body {
 }
 
 .button__like-border {
-  font-size: 23px;
+  font-size: 24px;
 }
 
 .button__like-full {
   -webkit-transform: scale(0);
           transform: scale(0);
-  font-size: 23px;
+  font-size: 24px;
   position: absolute;
   left: 0;
   top: 0;
@@ -400,14 +399,14 @@ body {
 
 .menu-info {
   padding-left: 6px;
-  padding-right: 52.9px;
+  padding-right: 55.2px;
   margin-bottom: 38px;
   position: relative;
 }
 
 .menu-info .button__like {
   position: absolute;
-  right: 19.55px;
+  right: 20.4px;
   top: 6px;
 }
 
@@ -440,6 +439,7 @@ body {
   height: auto;
   padding: 0;
   border: none;
+  margin-bottom: 24px;
 }
 
 .menu-form legend {
@@ -447,7 +447,7 @@ body {
   position: relative;
   margin-left: 6px;
   margin-top: 18px;
-  margin-bottom: 18px;
+  margin-bottom: 24px;
   text-align: left;
   overflow-wrap: normal;
   word-break: keep-all;
@@ -471,7 +471,7 @@ body {
 }
 
 .menu-form-checkbox:checked + label .menu-form-label-content-checked::after {
-  opacity: 0.3;
+  opacity: 0.35;
 }
 
 .menu-form-checkbox:checked + label .menu-form-label-content-checked i {
@@ -487,14 +487,6 @@ body {
           box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.12);
   display: block;
   overflow: hidden;
-}
-
-.menu-form-label :hover {
-  cursor: pointer;
-}
-
-.menu-form-label :hover .menu-form-label-content-checked {
-  width: 64px;
 }
 
 .menu-form-label-content {
@@ -545,10 +537,14 @@ body {
   padding-left: 12px;
 }
 
+.menu-form-label-content-texts-name p {
+  font-size: 15px;
+}
+
 .menu-form-label-content-texts-cost {
   height: 100%;
-  margin-left: 8px;
-  margin-right: 22px;
+  margin-left: 12px;
+  margin-right: 26px;
 }
 
 .menu-form-label-content-checked {
@@ -600,6 +596,7 @@ body {
 
 /*##################### MODIFIERS #####################*/
 .button__main {
+  margin-top: 12px;
   width: 50%;
 }
 
@@ -608,6 +605,12 @@ body {
   main {
     padding-left: 25%;
     padding-right: 25%;
+  }
+  .menu-form-label:hover {
+    cursor: pointer;
+  }
+  .menu-form-label:hover .menu-form-label-content-checked {
+    width: 64px;
   }
 }
 /*# sourceMappingURL=style_restaurant.css.map */
