@@ -1,6 +1,5 @@
 /*Question*/
 /*########## Imports ##########*/
-/*2200*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @-webkit-keyframes anim-loading-loader {
@@ -35,6 +34,54 @@
   100% {
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
+  }
+}
+
+@-webkit-keyframes anim-menu-choice-checked {
+  0% {
+    -webkit-transform: translateX(10px) rotate(0deg);
+            transform: translateX(10px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translateX(0px) rotate(360deg);
+            transform: translateX(0px) rotate(360deg);
+  }
+}
+
+@keyframes anim-menu-choice-checked {
+  0% {
+    -webkit-transform: translateX(10px) rotate(0deg);
+            transform: translateX(10px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translateX(0px) rotate(360deg);
+            transform: translateX(0px) rotate(360deg);
+  }
+}
+
+@-webkit-keyframes anim-menu-choice-fade-in {
+  0% {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes anim-menu-choice-fade-in {
+  0% {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
   }
 }
 
