@@ -83,10 +83,12 @@
                 }
                 i{
                     font-size: 30px;
+                    animation: anim-menu-choice-checked $menu-choice-checked-animation-duration ease 0ms both;
                 }
             }
         }
         &-label{
+            animation: anim-menu-choice-fade-in 800ms ease both;
             width: 100%;
             background-color: white;
             margin-bottom: 14px;
@@ -128,7 +130,7 @@
                 }
                 &-checked{
                     position: relative;
-                    transition: width 1000ms cubic-bezier(0.1,0.8,0.2,1);
+                    transition: width $menu-choice-checked-animation-duration cubic-bezier(0.1,0.8,0.2,1);
                     background-color: $color-tertiary;
                     height: $menu-checkbox-height;
                     width: 0;
@@ -137,6 +139,7 @@
                     justify-content: center;
                     align-items: center;
                     i{
+                        transform: translateX(10px);
                         transition: all 100ms ease-out;
                         font-size: 20px;
                         color: white;
@@ -167,4 +170,12 @@
 .button__main{
     margin-top: 12px;
     width: 50%;
+}
+$choices-number: 9;
+.menu-form-checkbox{
+    @for $i from 1 through $choices-number{
+        &+label[for="item-#{$i}"]{
+            animation-delay: 100ms+(150ms*$i);
+        }
+    }
 }

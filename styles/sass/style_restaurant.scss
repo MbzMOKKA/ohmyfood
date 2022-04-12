@@ -23,6 +23,9 @@
         cursor: pointer;
         .menu-form-label-content-checked{
             width: $menu-checkbox-height;
+            i{
+                animation: anim-menu-choice-checked $menu-choice-checked-animation-duration ease 0ms both;
+            }
         }
     }
 }
