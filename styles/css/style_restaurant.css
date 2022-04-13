@@ -18,6 +18,28 @@
   }
 }
 
+@-webkit-keyframes anim-loading-loader-icon {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes anim-loading-loader-icon {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 @-webkit-keyframes anim-loading-content {
   0% {
   }
@@ -132,7 +154,7 @@ h3 {
   font-size: 16px;
 }
 
-/*Name of the menu in the index*/
+/*Name of a menu*/
 h4 {
   font-weight: 700;
   font-size: 18px;
@@ -289,9 +311,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0;
   width: 100%;
   height: 100%;
+  padding: 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .button__main::after {
@@ -337,19 +361,13 @@ body {
   height: 100%;
 }
 
-.button__main p {
+.button__main strong {
   width: 100%;
   height: 100%;
   text-align: center;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  color: white;
   margin-left: 6px;
   margin-right: 6px;
-}
-
-.button__main strong {
-  text-align: center;
-  color: white;
 }
 
 .button__like {
@@ -412,7 +430,7 @@ body {
 .restaurant-background {
   position: relative;
   width: 100%;
-  height: 248px;
+  height: 264px;
   overflow: hidden;
   z-index: -1;
 }
@@ -563,8 +581,8 @@ body {
 .menu-form-label-content-texts {
   width: 100%;
   height: 100%;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -586,13 +604,26 @@ body {
   width: 100%;
   height: 100%;
   padding-left: 12px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
-.menu-form-label-content-texts-name h4 {
+.menu-form-label-content-texts-name-title {
+  display: block;
+  margin-bottom: 4px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.menu-form-label-content-texts-name strong {
   font-size: 16px;
+  font-weight: 700;
 }
 
-.menu-form-label-content-texts-name p {
+.menu-form-label-content-texts-name small {
+  font-weight: 400;
   font-size: 14px;
 }
 
@@ -644,12 +675,6 @@ body {
   opacity: 0;
   -webkit-transition: opacity 100ms ease-out;
   transition: opacity 100ms ease-out;
-}
-
-.menu-form-label-content-texts-name p, .menu-form-label-content-texts-name h4 {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
 }
 
 /*##################### MODIFIERS #####################*/
